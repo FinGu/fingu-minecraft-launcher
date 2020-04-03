@@ -10,10 +10,10 @@ namespace FinGuMCLauncher
     {
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
+        /// Entry point of the application
         /// </summary>
         [STAThread]
-        static void Main()
-        {
+        static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());

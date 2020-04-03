@@ -30,7 +30,7 @@
         {
             this.MainTabControl = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.version_label = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.user = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
@@ -79,7 +79,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.materialLabel9);
+            this.tabPage1.Controls.Add(this.version_label);
             this.tabPage1.Controls.Add(this.materialLabel8);
             this.tabPage1.Controls.Add(this.user);
             this.tabPage1.Controls.Add(this.materialLabel7);
@@ -96,18 +96,18 @@
             this.tabPage1.Text = "Main";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // materialLabel9
+            // version_label
             // 
-            this.materialLabel9.AutoSize = true;
-            this.materialLabel9.Depth = 0;
-            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(583, 282);
-            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel9.Name = "materialLabel9";
-            this.materialLabel9.Size = new System.Drawing.Size(17, 19);
-            this.materialLabel9.TabIndex = 10;
-            this.materialLabel9.Text = "n";
+            this.version_label.AutoSize = true;
+            this.version_label.Depth = 0;
+            this.version_label.Font = new System.Drawing.Font("Roboto", 11F);
+            this.version_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.version_label.Location = new System.Drawing.Point(583, 282);
+            this.version_label.MouseState = MaterialSkin.MouseState.HOVER;
+            this.version_label.Name = "version_label";
+            this.version_label.Size = new System.Drawing.Size(17, 19);
+            this.version_label.TabIndex = 10;
+            this.version_label.Text = "n";
             // 
             // materialLabel8
             // 
@@ -275,7 +275,7 @@
             this.LoadCFG.TabIndex = 12;
             this.LoadCFG.Text = "LoadCFG";
             this.LoadCFG.UseVisualStyleBackColor = true;
-            this.LoadCFG.Click += new System.EventHandler(this.materialRaisedButton2_Click);
+            this.LoadCFG.Click += new System.EventHandler(this.LoadCFG_Click);
             // 
             // SaveCFG
             // 
@@ -419,7 +419,6 @@
             this.VersionListView.TabIndex = 0;
             this.VersionListView.UseCompatibleStateImageBehavior = false;
             this.VersionListView.View = System.Windows.Forms.View.Details;
-            this.VersionListView.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.VersionListView_ColumnClick);
             this.VersionListView.SelectedIndexChanged += new System.EventHandler(this.VersionListView_SelectedIndexChanged_1);
             // 
             // Versions
@@ -501,7 +500,7 @@
         private MaterialSkin.Controls.MaterialRaisedButton Logout;
         private MaterialSkin.Controls.MaterialLabel user;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
-        private MaterialSkin.Controls.MaterialLabel materialLabel9;
+        private MaterialSkin.Controls.MaterialLabel version_label;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private System.Windows.Forms.OpenFileDialog ChooseSkin;
     }
