@@ -1,21 +1,14 @@
-﻿using CmlLib.Launcher;
+using System;
+using System.IO;
+using System.Net;
+using System.Threading;
+using System.Windows.Forms;
+using System.ComponentModel;
+using System.Runtime.InteropServices;
+//other includes ⬇️
+using CmlLib.Launcher;
 using MaterialSkin;
 using MaterialSkin.Controls;
-using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using CmlLib.Utils;
-using System.Runtime.InteropServices;
-using System.Net;
 
 namespace FinGuMCLauncher
 {
@@ -46,7 +39,7 @@ namespace FinGuMCLauncher
 
         private void Main_Load(object sender, EventArgs e)
         {
-            if (!File.Exists("config.json")) {
+            if (!File.Exists("config.json")) { //default config check and creating
                 ConfigSystem.Create();
                 ConfigSystem load = ConfigSystem.Load();
 
@@ -55,10 +48,13 @@ namespace FinGuMCLauncher
                 RAMAmmount.Text = load.MaxRam;
             }
 
-            LoadProfiles();
+            LoadProfiles(); //profile loading
 
-            if (!File.Exists(MCPath.Text + "\\launcher_profiles.json"))
-                File.WriteAllText(MCPath.Text + "\\launcher_profiles.json", new WebClient().DownloadString("https://launchermeta.mojang.com/mc/game/version_manifest.json"));
+            ConfigSystem cfg = ConfigSystem.Load();
+
+            if (!File.Exists(cfg.MCPath + "\\launcher_profiles.json")) { //check to make people be able to install forge
+                File.WriteAllText(cfg.MCPath + "\\launcher_profiles.json", new WebClient().DownloadString("https://launchermeta.mojang.com/mc/game/version_manifest.json"));
+            }
 
             version_label.Text = API.version;
             LogS.Text = API.Logs();
@@ -79,7 +75,7 @@ namespace FinGuMCLauncher
             VersionListView.Items.Clear();
 
             foreach (var item in versions) {
-                if (MProfileTypeConverter.FromString(item.Type) == MProfileType.Release || MProfileTypeConverter.FromString(item.Type) == MProfileType.Custom) {
+                if (MProfileTypeConverter.FromString(item.Type) == MProfileType.Release || MProfileTypeConverter.FromString(item.Type) == MProfileType.Custom) { //if you want more versions, edit this part here
                     var toAdd = new ListViewItem(item.Name);
                     VersionListView.Items.Add(toAdd);
                 }
@@ -199,4 +195,3 @@ namespace FinGuMCLauncher
         }
     }
 }
-
