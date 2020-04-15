@@ -8,9 +8,9 @@ if(isset($_GET["lg"])){
     $data = "
     Welcome to my Minecraft Launcher!!
     The most recent logs are :
-    Settings added,
     Decent GUI,
-    Bugs Fix
+    Bugs Fix,
+    Updated dependencies
     ";
     echo $data;
 }

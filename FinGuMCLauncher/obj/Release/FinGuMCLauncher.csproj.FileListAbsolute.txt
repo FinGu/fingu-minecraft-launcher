@@ -1,0 +1,13 @@
+C:\sd\c_github\FinGuMinecraftLauncher\Release\FinGuMCLauncher.exe.config
+C:\sd\c_github\FinGuMinecraftLauncher\Release\FinGuMCLauncher.exe
+C:\sd\c_github\FinGuMinecraftLauncher\Release\FinGuMCLauncher.pdb
+C:\sd\c_github\FinGuMinecraftLauncher\FinGuMCLauncher\obj\Release\FinGuMCLauncher.csprojAssemblyReference.cache
+C:\sd\c_github\FinGuMinecraftLauncher\FinGuMCLauncher\obj\Release\FinGuMCLauncher.Login.resources
+C:\sd\c_github\FinGuMinecraftLauncher\FinGuMCLauncher\obj\Release\FinGuMCLauncher.Main.resources
+C:\sd\c_github\FinGuMinecraftLauncher\FinGuMCLauncher\obj\Release\FinGuMCLauncher.Properties.Resources.resources
+C:\sd\c_github\FinGuMinecraftLauncher\FinGuMCLauncher\obj\Release\FinGuMCLauncher.csproj.GenerateResource.cache
+C:\sd\c_github\FinGuMinecraftLauncher\FinGuMCLauncher\obj\Release\FinGuMCLauncher.csproj.CoreCompileInputs.cache
+C:\sd\c_github\FinGuMinecraftLauncher\FinGuMCLauncher\obj\Release\FinGuMCLauncher.csproj.Fody.CopyLocal.cache
+C:\sd\c_github\FinGuMinecraftLauncher\FinGuMCLauncher\obj\Release\FinGuMCLauncher.csproj.CopyComplete
+C:\sd\c_github\FinGuMinecraftLauncher\FinGuMCLauncher\obj\Release\FinGuMCLauncher.exe
+C:\sd\c_github\FinGuMinecraftLauncher\FinGuMCLauncher\obj\Release\FinGuMCLauncher.pdb
