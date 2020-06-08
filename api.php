@@ -1,17 +1,16 @@
 <?php
 
-if(isset($_GET["vc"])) {
-    $version = '1.2';
-    echo $version;
+if (isset($_GET["vc"])) {
+	$version = '1.2';
+
+	die($version);
 }
-if(isset($_GET["lg"])){
-    $data = "
+if (isset($_GET["lg"])) {
+	$data = "
     Welcome to my Minecraft Launcher!!
     The most recent logs are :
-    Decent GUI,
-    Bugs Fix,
-    Updated dependencies
+    snake_case
     ";
-    echo $data;
-}
 
+	die($data);
+}

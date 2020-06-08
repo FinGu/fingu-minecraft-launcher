@@ -1,2 +1,3 @@
-# FinGuMinecraftLauncher
- fingu's minecraft launcher, too lazy to put credits, altough pratically all things that deserve credits is in the nuget packages folder
+# fingu-minecraft-launcher
+ My Minecraft launcher, uses CMLLib by AlphaBs on github.
+ It uses MaterialSkin as the design framework and Newtonsoft.Json for the config system

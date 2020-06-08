@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinGuMCLauncher
+namespace fingu_minecraft_launcher
 {
-    static class Program
+    static class entry_point
     {
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
@@ -16,7 +16,7 @@ namespace FinGuMCLauncher
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new login_form());
         }
     }
 }

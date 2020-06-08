@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FinGuMCLauncher.Properties
+namespace fingu_minecraft_launcher.Properties
 {
 
 
